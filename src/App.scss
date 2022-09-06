@@ -4,7 +4,7 @@
 }
 
 .widget-nav {
-  background-color: #F7F4EF;
+  background-color: var(--backgroundColor, #F7F4EF);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 
 .order-button {
   display: block;
-  background: #fdc831;
+  background: var(--buttonColor, #fdc831);
   border-radius: 4px;
   cursor: pointer;
   color: black;
