@@ -19,7 +19,7 @@ export const ConfigurationContext: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   return (
     <configContext.Provider
-      value={window.navBar ? window.navBar.options : initialValue}>
+      value={window.navBar.options ? window.navBar.options : initialValue}>
       {children}
     </configContext.Provider>
   );

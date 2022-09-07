@@ -20,19 +20,17 @@
         // store the name of the global variable
         window["SliceNabvar"] = globalName;
 
-        // creates a global variable to delegate, so it will be available before script loaded
+        // Creates a function that will store the config params
         window[globalName] =
             window[globalName] ||
             function () {
-                // pushes arguments that were passed to delegate into queue
-                // so they can be accessed later from the main script
                 (window[globalName].options = window[globalName].options || arguments[0]);
             };
 
         // dynamically create a script tag element with async execution,
         scriptElement = document.createElement("script");
         otherScriptElement = document.getElementsByTagName("script")[0];
-        scriptElement.async = true; // it is just a shorter version of `true`
+        scriptElement.async = true;
         scriptElement.src = scriptAddress;
 
         // Create the link tag for the css
@@ -49,7 +47,7 @@
     })(
         window,
         document,
-        "/static/js/main.09d82ccc.js",
+        "/static/js/main.d545ccd5.js",
         "/static/css/main.72c76407.css",
         "navBar",
     );
